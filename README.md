@@ -34,7 +34,6 @@ $ export ROS_MASTER_URI =     //pi's IP
 $ roscore
 $ roslaunch freenect_launch freenect.launch depth_registration:=true
 $ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start --Vis/MaxFeatures 500 --Vis/CorType 1 --Mem/ImagePreDecimation 2 --Mem/ImagePostDecimation 2 --Kp/DetectorStrategy 6 --OdomF2M/MaxSize 1000 --Vis/MaxFeatures 600 --Odom/ImageDecimation 2" rtabmapviz:=false
-< --http://wiki.ros.org/rtabmap_ros/Tutorials/Advanced%20Parameter%20Tuning -- >
 (2)On your pc:
 $ rosrun rviz rviz (subsribe the topic you need)
 or
