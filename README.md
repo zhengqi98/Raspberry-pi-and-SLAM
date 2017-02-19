@@ -2,7 +2,7 @@
 Use Kinect XBOX 360 and Rasberry pi 3 to do SLAM, dispalyed on PC at the same time.
 
 1.Install Ubuntu 16.04 mate for your pi:
-https://ubuntu-mate.org/download/
+<-- https://ubuntu-mate.org/download/ -- >
 
 2.Install ROS for your pi:
 $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
