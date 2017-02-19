@@ -2,7 +2,7 @@
 Use Kinect XBOX 360 and Rasberry pi 3 to do SLAM, dispalyed on PC at the same time.
 
 1.Install Ubuntu 16.04 mate for your pi:
-<-- https://ubuntu-mate.org/download/ -- >
+https://ubuntu-mate.org/download/
 
 2.Install ROS for your pi:
 ```
@@ -17,7 +17,7 @@ $ source /opt/ros/kinetic/setup.bash
 $ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 $ sudo apt-get install python-rosinstall
 ```
-< -- It may take quite a long time, just let it alone and do anything else -- >
+It may take quite a long time, just let it alone and do anything else.
 
 3.Install something for your pi:
 ```
@@ -43,7 +43,8 @@ $ roscore
 $ roslaunch freenect_launch freenect.launch depth_registration:=true
 $ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start --Vis/MaxFeatures 500 --Vis/CorType 1 --Mem/ImagePreDecimation 2 --Mem/ImagePostDecimation 2 --Kp/DetectorStrategy 6 --OdomF2M/MaxSize 1000 --Vis/MaxFeatures 600 --Odom/ImageDecimation 2" rtabmapviz:=false
 ```
-< -- http://wiki.ros.org/rtabmap_ros/Tutorials/Advanced%20Parameter%20Tuning -- >
+http://wiki.ros.org/rtabmap_ros/Tutorials/Advanced%20Parameter%20Tuning
+
 (2)On your pc:
 ```
 $ rosrun rviz rviz (subsribe the topic you need)
@@ -52,5 +53,6 @@ or
 ```
 $ ROS_NAMESPACE=rtabmap rosrun rtabmap_ros rtabmapviz _subscribe_odom_info:=false _frame_id:=camera_link
 ```
+
 TODO:
 Use robot to navigate
