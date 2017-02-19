@@ -47,7 +47,7 @@ $ roslaunch rtabmap_ros rgbd_mapping.launch rtabmap_args:="--delete_db_on_start 
 http://wiki.ros.org/rtabmap_ros/Tutorials/Advanced%20Parameter%20Tuning<br>
 (2)On your pc:<br>
 ```
-$ rosrun rviz rviz (subsribe the topic you need)
+$ rosrun rviz rviz //subsribe the topic you need
 ```
 or<br>
 ```
